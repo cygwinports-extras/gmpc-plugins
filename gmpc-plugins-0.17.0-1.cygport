@@ -1,0 +1,10 @@
+inherit gnome2
+
+DESCRIPTION="Plugins for the GTK Music Player Daemon client"
+HOMEPAGE="http://gmpc.wikia.com/wiki/"
+SRC_URI="mirror://sourceforge/musicpd/${P}.tar.gz"
+PATCH_URI="0.17-configure.patch"
+
+# libnotify was not shipped with this package (bug in toplevel Makefile.am)
+CYGCONF_ARGS="--disable-avahi --disable-libnotify --disable-lirc"
+MAKEOPTS+=" LDFLAGS=-no-undefined"

@@ -1,0 +1,95 @@
+gmpc-plugins
+------------------------------------------
+GMPC is a GTK2 client for Music Player Daemon. The interface is made to 
+be easy to use, but provide full access to all the features MPD 
+provides. It gives the user several ways to browse his database while 
+still being a lightweight client.
+
+Runtime requirements:
+  cygwin-1.5.25-15
+  gmpc-0.17.0-1
+  libcairo2-1.8.6-1
+  libcurl4-7.16.3-1
+  libglade2.0_0-2.6.3-2
+  libglib2.0_0-2.18.4-1
+  libgtk2.0_0-2.14.7-2
+  libjson-glib1.0_0-0.6.2-1
+  libmpd0-0.17.0-1
+  libxml2-2.7.3-1
+  libxosd2-2.2.14-3
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.63-1
+  automake1.10-1.10.1-2
+  binutils-20080624-2
+  cygport-0.4.3-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  libtool-2.2.6a-1
+  make-3.81-1
+  pkg-config-0.23a-2
+  sed-4.1.5-2
+
+Canonical website:
+  http://gmpc.wikia.com/
+
+Canonical download:
+  http://downloads.sourceforge.net/mediapd/
+
+-------------------------------------------
+
+Build instructions:
+  unpack gmpc-plugins-0.17.0-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./gmpc-plugins-0.17.0-X.cygport all
+
+This will create:
+  /usr/src/gmpc-plugins-0.17.0-X-src.tar.bz2
+  /usr/src/gmpc-plugins-0.17.0-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+  /usr/lib/gmpc/plugins/alarmplugin.dll
+  /usr/lib/gmpc/plugins/alarmplugin.la
+  /usr/lib/gmpc/plugins/caaplugin.dll
+  /usr/lib/gmpc/plugins/caaplugin.la
+  /usr/lib/gmpc/plugins/cygextraplaylist.dll
+  /usr/lib/gmpc/plugins/jamendoplugin.dll
+  /usr/lib/gmpc/plugins/jamendoplugin.la
+  /usr/lib/gmpc/plugins/lastfmplugin.dll
+  /usr/lib/gmpc/plugins/lastfmplugin.la
+  /usr/lib/gmpc/plugins/libextraplaylist.la
+  /usr/lib/gmpc/plugins/lyricsplugin.dll
+  /usr/lib/gmpc/plugins/lyricsplugin.la
+  /usr/lib/gmpc/plugins/lyricwikiplugin.dll
+  /usr/lib/gmpc/plugins/lyricwikiplugin.la
+  /usr/lib/gmpc/plugins/magnatuneplugin.dll
+  /usr/lib/gmpc/plugins/magnatuneplugin.la
+  /usr/lib/gmpc/plugins/mdcaplugin.dll
+  /usr/lib/gmpc/plugins/mdcaplugin.la
+  /usr/lib/gmpc/plugins/osdplugin.dll
+  /usr/lib/gmpc/plugins/osdplugin.la
+  /usr/lib/gmpc/plugins/serverstatsplugin.dll
+  /usr/lib/gmpc/plugins/serverstatsplugin.la
+  /usr/lib/gmpc/plugins/shoutplugin.dll
+  /usr/lib/gmpc/plugins/shoutplugin.la
+  /usr/share/gmpc/plugins/jamendo/jamendo.png
+  /usr/share/gmpc/plugins/magnatune/magnatune.png
+  /usr/share/gmpc/plugins/magnatune/xdg-open
+  /usr/share/gmpc/plugins/serverstats/mpd.png
+
+------------------
+
+Port Notes:
+
+----- version 0.17.0-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/
