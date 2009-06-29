@@ -1,5 +1,5 @@
 category: Audio Gnome
-requires: cygwin gmpc libcairo2 libcurl4 libglade2.0_0 libglib2.0_0 libgtk2.0_0 libjson-glib1.0_0 libmpd0 libxml2 libxosd2
+requires: gmpc libcairo2 libcurl4 libglade2.0_0 libglib2.0_0 libgtk2.0_0 libjson-glib1.0_0 libmpd0 libxml2 libxosd2
 sdesc: "GTK+ client for the Music Player Daemon (plugins)"
 ldesc: "GMPC is a GTK2 client for Music Player Daemon. The interface is 
 made to be easy to use, but provide full access to all the features MPD 
