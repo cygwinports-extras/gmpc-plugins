@@ -1,10 +1,9 @@
 --- origsrc/gmpc-plugins-0.17.0/configure.ac	2008-12-25 15:38:19.000000000 -0600
 +++ src/gmpc-plugins-0.17.0/configure.ac	2009-02-27 10:47:00.905375000 -0600
-@@ -1,6 +1,6 @@
+@@ -1,6 +1,5 @@
  AC_INIT([gmpc-plugins], [0.17.0], [qball@sarine.nl])
  AC_CONFIG_AUX_DIR([.])
 -AC_CONFIG_MACRO_DIR([m4])
-+## AC_CONFIG_MACRO_DIR([m4])
  AM_INIT_AUTOMAKE
  AC_PROG_CC
  
