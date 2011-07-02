@@ -8,5 +8,5 @@ PATCH_URI="0.17-configure.patch"
 DIFF_EXCLUDES="ltmain.sh Makefile.in.in"
 
 # libnotify was not shipped with this package (bug in toplevel Makefile.am)
-CYGCONF_ARGS="--disable-avahi --disable-libnotify --disable-lirc --disable-mserver"
+CYGCONF_ARGS="--disable-libnotify --disable-lirc --disable-mserver"
 MAKEOPTS+=" LDFLAGS=-no-undefined"
