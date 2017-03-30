@@ -2,7 +2,7 @@ inherit gnome2
 
 NAME="gmpc-plugins"
 VERSION=11.8.16
-RELEASE=1
+RELEASE=2
 CATEGORY="Audio"
 SUMMARY="GTK+ client for the Music Player Daemon (plugins)"
 DESCRIPTION="GMPC is a GTK2 client for Music Player Daemon. The interface is
@@ -11,10 +11,16 @@ provides. It gives the user several ways to browse his database while still
 being a lightweight client."
 HOMEPAGE="http://gmpclient.org/"
 SRC_URI="http://www.musicpd.org/download/${NAME}/${VERSION}/${NAME}-${VERSION}.tar.gz"
-PATCH_URI="0.17-configure.patch"
+PATCH_URI="
+	0.17-configure.patch
+	11.8.16-albumview-fix-crash.patch
+"
 
-DIFF_EXCLUDES="ltmain.sh Makefile.in.in"
+DIFF_EXCLUDES="config.h.in ltmain.sh Makefile.in.in"
 
 # libnotify was not shipped with this package (bug in toplevel Makefile.am)
-CYGCONF_ARGS="--disable-libnotify --disable-lirc --disable-mserver --disable-static"
+CYGCONF_ARGS="--disable-libnotify --disable-lirc"
+# blacklisted in upstream git (supposedly DDOS's Wikipedia)
+CYGCONF_ARGS+=" --disable-wikipedia"
+
 MAKEOPTS+=" LDFLAGS=-no-undefined"
